@@ -27,7 +27,7 @@ function App() {
   return (
     <div className='container'>
       <header className='titleContainer'>
-        <p className='title'>To Do's</p>
+        <p className='title'>TO DO'S</p>
       </header>
 
       <section className='inputContainer'>
@@ -40,14 +40,27 @@ function App() {
       <section className='todosContainer'>
         {
           todos.length === 0 ?
-          <p>There're no to do's</p> :
+          <p className='message'>There're no to do's</p> :
           todos.map((todo, index) => {
-            return <button className='todo' key={index} onClick={() => completeTodo(index)}>
+            return <div className='todo' key={index} >
               <p className='todoText'>{todo}</p>
-            </button>
+              <button className='todoButton' onClick={() => completeTodo(index)}>X</button>
+            </div>
           })
         }
       </section>
+      
+      <nav className='links'>
+        <a className='link' href='https://www.linkedin.com/in/facundo-figueroa-dev' target ='_blank' rel="noreferrer">
+          <p>LinkedIn</p>
+        </a>
+        <a className='link' href='https://github.com/FacundoFigueroa23' target ='_blank' rel="noreferrer">
+          <p>GitHub</p>
+        </a>
+        <button className='link' onClick={() => alert("Currently working on it")}>
+          <p>Portfolio</p>
+        </button>
+      </nav>
     </div>
   );
 }
