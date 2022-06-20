@@ -1,0 +1,35 @@
+.inputContainer{
+    height: 3rem;
+    width: 20rem;
+  
+    display: flex;
+    justify-content: space-between;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+}
+
+.input{
+    width: 75%;
+    border-radius: 1rem;
+    padding-left: 0.5rem;
+    border: none;
+    outline: none;
+    font-size: 1rem;
+    font-weight: 400;
+    font-family: 'Kanit', sans-serif;
+}
+
+.addTodo{
+    background-color: black;
+    width: 15%;
+    border-radius: 50%;
+    cursor: pointer;
+    border: none;
+}
+
+.textAddTodo{
+    color: white;
+    margin-top: 0vh;
+    margin-bottom: 0vh;
+    font-size: 5vh;
+}
