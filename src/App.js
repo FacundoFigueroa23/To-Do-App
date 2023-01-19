@@ -8,8 +8,6 @@ function App() {
   const [todo, setTodo] = useState("")
   const [todos, setTodos] = useState(JSON.parse(localStorage.getItem("Todos")) ?? [])
 
-  // let todos = JSON.parse(localStorage.getItem("Todos")) ?? []
-
   useEffect(() => {
     console.log("Todos: ", todos)
   }, [todos])
